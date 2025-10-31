@@ -5,3 +5,35 @@
 @include vf-p-segmented-control;
 @include vf-p-switch;
 @include vf-p-forms-inline;
+
+.p-example-controls {
+  background-color: $colors--theme--background-default;
+  border-bottom: 1px solid $colors--theme--border-low-contrast;
+  padding-bottom: $spv--x-small;
+  padding-top: $spv--x-small;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  &__content {
+    align-items: baseline;
+    display: flex;
+    gap: $sph--small;
+
+    .p-heading--5 {
+      margin-bottom: 0;
+    }
+
+    .p-segmented-control__list {
+      flex-shrink: 0;
+    }
+  }
+
+  .p-form__group {
+    margin-bottom: 0;
+
+    label {
+      padding-top: 0;
+    }
+  }
+}
